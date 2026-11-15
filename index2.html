@@ -81,7 +81,7 @@ Tables are used to organize information in rows and columns.
 <li>td creates a data cell.</li>
 </ul>
 An Example of a table is shown above, which represents a weekly timetable with time slots and subjects for each day. The table includes a caption, header, body, and footer sections to organize the data effectively:
-<table border="1" bordercolor="White">
+<table border="1" bordercolor="Black">
         <caption><B>My Time table</B></caption>
         <thead>
             <tr>
@@ -166,6 +166,473 @@ Colspan makes a cell span multiple columns.
 <ul>
 <li><strong>rowspan="2"</strong> makes the Automata cell occupy two rows.</li>
 <li><strong>colspan="5"</strong> makes an empty cell stretch across five columns.</li>
+</ul>
+
+</div>
+<div class="section">
+
+<h2>3. Description Lists</h2>
+
+<pre>
+&lt;dl&gt;
+
+&lt;dt&gt;HTML&lt;/dt&gt;
+&lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+
+&lt;dt&gt;CSS&lt;/dt&gt;
+&lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+
+&lt;/dl&gt;
+</pre>
+
+<p>
+A description list is used to display terms and their definitions.
+</p>
+
+Example:
+
+<dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+</dl>
+
+</div>
+
+<div class="section">
+
+<h2>4. Nested Lists</h2>
+
+<pre>
+&lt;ul&gt;
+    &lt;li&gt;Frontend
+        &lt;ul&gt;
+            &lt;li&gt;HTML&lt;/li&gt;
+            &lt;li&gt;CSS&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<p>
+A nested list is a list contained inside another list.
+</p>
+
+Example:
+
+<ul>
+    <li>
+        Frontend
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </li>
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>5. Div Tag</h2>
+
+<pre>
+&lt;div&gt;
+
+This content is grouped together.
+
+&lt;/div&gt;
+</pre>
+
+<p>
+The div element is a container used to group content.
+</p>
+
+Example:
+
+<div style="background-color: gray; padding: 10px;">
+This content is grouped together.
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>6. Section Tag</h2>
+
+<pre>
+&lt;section&gt;
+
+&lt;h2&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;
+Introduction content
+&lt;/p&gt;
+
+&lt;/section&gt;
+</pre>
+
+<p>
+The section element groups related content together.
+<section
+style="
+background-color: lightyellow;
+padding:10px;
+border:1px solid black;">
+    
+<h3>Introduction</h3>
+
+<p>
+Introduction content
+</p>
+
+</section>
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>7. Article Tag</h2>
+
+<pre>
+&lt;article&gt;
+
+&lt;h3&gt;Website Project&lt;/h3&gt;
+
+&lt;p&gt;
+Project description
+&lt;/p&gt;
+
+&lt;/article&gt;
+</pre>
+
+<p>
+The article element contains self-contained content that could stand on its own, such as a blog post, news article, or project description.
+</p>
+
+Example:
+
+<article style="
+background-color: lightblue;
+padding:10px;
+border:1px solid black;">
+
+<h3>Website Project</h3>
+
+<p>
+This project demonstrates HTML concepts including multimedia, forms, and tables.
+</p>
+
+</article>
+
+</div>
+
+<div class="section">
+
+<h2>8. Aside Tag</h2>
+
+<pre>
+&lt;aside&gt;
+
+Quick Tips:
+&lt;ul&gt;
+    &lt;li&gt;Use semantic HTML&lt;/li&gt;
+    &lt;li&gt;Add alt text to images&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/aside&gt;
+</pre>
+
+<p>
+The aside element contains related information that is not part of the main content.
+</p>
+
+Example:
+
+<aside style="
+background-color: lightgreen;
+padding:10px;
+border:1px solid black;
+width:250px;">
+
+<h4>Quick Tips</h4>
+
+<ul>
+<li>Use semantic HTML</li>
+<li>Add alt text to images</li>
+<li>Use meaningful headings</li>
+</ul>
+
+</aside>
+
+</div>
+
+<div class="section">
+
+<h2>9. Forms</h2>
+
+<pre>
+&lt;form&gt;
+
+&lt;label&gt;Name:&lt;/label&gt;
+&lt;input type="text"&gt;
+
+&lt;label&gt;Email:&lt;/label&gt;
+&lt;input type="email"&gt;
+
+&lt;label&gt;Password:&lt;/label&gt;
+&lt;input type="password"&gt;
+
+&lt;button&gt;Submit&lt;/button&gt;
+
+&lt;/form&gt;
+</pre>
+
+<p>
+Forms are used to collect information from users.
+</p>
+
+Example:
+
+<form>
+<label>Name:</label>
+<input type="text">
+
+<br><br>
+
+<label>Email:</label>
+<input type="email">
+
+<br><br>
+
+<label>Password:</label>
+<input type="password">
+
+<br><br>
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</form>
+
+</div>
+
+<div class="section">
+
+<h2>10. Additional Form Controls</h2>
+
+<pre>
+&lt;input type="checkbox"&gt;
+
+&lt;input type="date"&gt;
+
+&lt;input type="tel"&gt;
+
+&lt;textarea rows="4" cols="30"&gt;
+&lt;/textarea&gt;
+
+&lt;input type="range"
+min="0"
+max="100"&gt;
+</pre>
+
+<p>
+HTML provides additional form controls that allow users to enter different
+types of information.
+</p>
+
+<ul>
+<li><strong>checkbox</strong> allows multiple selections.</li>
+<li><strong>date</strong> provides a calendar for selecting dates.</li>
+<li><strong>tel</strong> is used for telephone numbers.</li>
+<li><strong>textarea</strong> allows users to enter multiple lines of text.</li>
+<li><strong>range</strong> creates a slider for selecting a value within a range.</li>
+</ul>
+
+Example:
+
+<br><br>
+
+<input type="checkbox"> Web Programming
+
+<br><br>
+
+<input type="checkbox"> Java Programming
+
+<br><br>
+
+<label>Select a Date:</label>
+
+<br>
+
+<input type="date">
+
+<br><br>
+
+<label>Phone Number:</label>
+
+<br>
+
+<input type="tel">
+
+<br><br>
+
+<label>Comments:</label>
+
+<br>
+
+<textarea rows="4" cols="30">
+</textarea>
+
+<br><br>
+
+<label>Range:</label>
+
+<br>
+
+<input type="range" min="0" max="100">
+
+</div>
+
+<div class="section">
+
+<h2>11. Radio Buttons</h2>
+
+<pre>
+&lt;input type="radio"
+name="gender"&gt; Male
+
+&lt;input type="radio"
+name="gender"&gt; Female
+</pre>
+
+<p>
+Radio buttons allow users to select only one option.
+</p>
+
+Example:
+
+<input type="radio" name="gender"> Male
+
+<input type="radio" name="gender"> Female
+
+</div>
+
+<div class="section">
+
+<h2>12. Select and Option</h2>
+
+<pre>
+&lt;select&gt;
+
+&lt;option&gt;Compsci&lt;/option&gt;
+
+&lt;option&gt;Automata&lt;/option&gt;
+
+&lt;option&gt;Java&lt;/option&gt;
+
+&lt;/select&gt;
+</pre>
+
+<p>
+The select element creates a dropdown list.
+Option elements represent the choices.
+</p>
+
+Example:
+
+<select>
+<option>Compsci</option>
+<option>Automata</option>
+<option>Java</option>
+</select>
+
+</div>
+
+<div class="section">
+
+<h2>13. Buttons</h2>
+
+<pre>
+&lt;button&gt;Submit&lt;/button&gt;
+
+&lt;button type="reset"&gt;
+Reset
+&lt;/button&gt;
+</pre>
+
+<p>
+Buttons perform actions such as submitting or resetting forms.
+</p>
+
+Example:
+
+<button>Submit</button>
+
+<button type="reset">
+Reset
+</button>
+
+</div>
+
+<div class="section">
+
+<h2>14. Description Lists</h2>
+
+<pre>
+&lt;dl&gt;
+
+&lt;dt&gt;HTML&lt;/dt&gt;
+&lt;dd&gt;Creates webpage structure.&lt;/dd&gt;
+
+&lt;dt&gt;CSS&lt;/dt&gt;
+&lt;dd&gt;Adds styling.&lt;/dd&gt;
+
+&lt;/dl&gt;
+</pre>
+
+<p>
+Description lists display terms and definitions.
+</p>
+
+Example:
+
+<dl>
+<dt>HTML</dt>
+<dd>Creates webpage structure.</dd>
+
+<dt>CSS</dt>
+<dd>Adds styling.</dd>
+</dl>
+
+</div>
+
+<div class="section">
+
+<h2>15. Semantic Layout Elements</h2>
+
+<pre>
+&lt;header&gt;Header&lt;/header&gt;
+
+&lt;nav&gt;Navigation&lt;/nav&gt;
+
+&lt;main&gt;Main Content&lt;/main&gt;
+
+&lt;footer&gt;Footer&lt;/footer&gt;
+</pre>
+
+<p>
+Semantic elements describe the purpose of content on a webpage.
+They improve readability and organization.
+</p>
+
+<ul>
+<li>header represents introductory content.</li>
+<li>nav contains navigation links.</li>
+<li>main contains primary page content.</li>
+<li>footer contains information shown at the bottom of a page.</li>
 </ul>
 
 </div>
