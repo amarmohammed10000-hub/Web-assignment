@@ -3,21 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>HTML Tutorial</title>
 
 </head>
 
 <body>
-    <a href="index.html">Home</a>   
-
+    <nav>
+        <a href="index.html">Home</a>   |
+        <a href="index2.html">Tutorial vol2</a>
+    </nav>
+    <main>
 <h1>Building My First HTML Website</h1>
-
+<hr>
 <p>
 This tutorial expands on the basic HTML concepts and the
 purpose of each section of code.
 </p>
 
-<div >
 <h2>1. HTML Document Structure</h2>
 
 
@@ -28,13 +31,11 @@ purpose of each section of code.
 
 <p>
 The <strong>DOCTYPE</strong> declaration tells the browser that the
-document uses HTML5.
-The <strong>html</strong> element is the container of the webpage.
+document uses HTML5. This is the first step in our journey.
+The <strong>html</strong> element is the container of the webpage. 
 </p>
 
-</div>
 
-<div >
 <h2>2. Head Section</h2>
 
 <pre>
@@ -58,31 +59,7 @@ The head section contains information about the webpage.
 <li>Title appears in the browser tab.</li>
 </ul>
 
-</div>
-
-<div >
-<h2>3. Background Image Styling</h2>
-
-<pre>
-&lt;style&gt;
-body {
-    background-image: url("settings.JPG");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-&lt;/style&gt;
-</pre>
-
-<p>
-This CSS adds a background image, stretches it across the page,
-prevents repetition, and centers it.
-</p>
-
-</div>
-
-<div >
-<h2>4. Main Heading</h2>
+<h2>3. Main Heading</h2>
 
 <pre>
 &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
@@ -91,10 +68,7 @@ prevents repetition, and centers it.
 The h1 element creates the main heading of the page.
 </p>
 
-</div>
-
-<div >
-<h2>5. Navigation Links</h2>
+<h2>4. Navigation Links</h2>
 
 <pre>
 &lt;a href="index.html"&gt;Home&lt;/a&gt;
@@ -108,10 +82,8 @@ The h1 element creates the main heading of the page.
 Anchor tags create hyperlinks that allow users to move between pages.
 </p>
 
-</div>
 
-<div >
-<h2>6. Horizontal Rule</h2>
+<h2>5. Horizontal Rule</h2>
 
 
 <pre>
@@ -123,10 +95,8 @@ Anchor tags create hyperlinks that allow users to move between pages.
 The hr element creates a horizontal line used to separate content.
 </p>
 
-</div>
 
-<div >
-<h2>7. Miscellaneous Elements</h2>
+<h2>6. Miscellaneous Elements</h2>
 
 <pre>
 &lt;h1&gt;&lt;ins&gt;Introduction&lt;/ins&gt;&lt;/h1&gt;
@@ -169,10 +139,8 @@ The <strong><u>underlined</u></strong> tag underlines text.
 The <strong><sub>subscript</sub></strong> tag creates subscript text.
 The <strong><sup>superscript</sup></strong> tag creates superscript text.
 
-</div>
 
-<div >
-<h2>8. Displaying Images</h2>
+<h2>7. Displaying Images</h2>
 
 <pre>
 &lt;figure&gt;
@@ -187,29 +155,30 @@ This is an image
 &lt;/figcaption&gt;
 
 &lt;/figure&gt;
-
+</pre>
 Example of an image with a caption.
 <figure>
-    <img src="image7.jpg"
-         alt="Historic canal city illustration"
+    <img src="../assets/image7.jpg"
+         alt="Historic canal city illustration-error"
          width="500"
          height="600">
     <figcaption>
-        Historic canal city illustrastion
+        <b>Historic canal city illustrastion</b>
     </figcaption>
 </figure>
-</pre>
-
-
 <p>
-The image tag displays an image while the figure and figcaption
-provide a caption.
+    <ul>
+    <li>The image tag displays an image</li>
+    <li>while the figure and figcaption provide a caption.</li>
+    <li>src is short for source, it identifies the source</li>
+    <li>the alt tag prints an error text incase of an error</li>
+    <li>width and height tags control the frame size</li>
+
+</ul>
+
 </p>
 
-</div>
-
-<div >
-<h2>9. Audio Player</h2>
+<h2>8. Audio Player</h2>
 
 
 <pre>
@@ -225,13 +194,10 @@ The audio element allows users to play sound files.
 </p>
 Example of an audio player:
     <audio controls autoplay loop>
-        <source src="audio.mp3" type="audio/mp3"> 
+        <source src="../assets/audio.mp3" type="audio/mp3"> 
     </audio>
-    <pre>
-</div>
 
-<div >
-<h2>10. Video Player</h2>
+<h2>9. Video Player</h2>
 
 
 <pre>
@@ -246,27 +212,22 @@ type="video/mp4"&gt;
 
 &lt;/video&gt;
 </pre>
-
-
 <p>
 The video element displays video content.
 </p>
 Example of a video player:
     <video width="500" controls autoplay muted loop>
-        <source src="video.mp4" type="video/mp4"> 
+        <source src="../assets/video.mp4" type="video/mp4"> 
     </video>
-
 <ul>
 <li>controls = Play/Pause buttons</li>
 <li>autoplay = Starts automatically</li>
 <li>muted = Starts without sound</li>
 <li>loop = Repeats continuously</li>
+<li>width = controls the width of the frame</li>
 </ul>
 
-</div>
-
-<div >
-<h2>11. Google Maps Embed</h2>
+<h2>10. Google Maps Embed</h2>
 
 
 <pre>
@@ -284,10 +245,7 @@ Example of a Google Map embed:
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4853.624037005969!2d38.75838807586889!3d9.030625791030603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85f0f9a06d85%3A0x4331551f2e0d81cb!2sAmerican%20College%20of%20Technology%20(ACT)%2C%20Addis%20Ababa%2C%20Ethiopia!5e1!3m2!1sen!2set!4v1793820341045!5m2!1sen!2set" 
         width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
-</div>
-
-<div >
-<h2>12. YouTube Embed</h2>
+<h2>11. YouTube Embed</h2>
 
 
 <pre>
@@ -304,10 +262,8 @@ The iframe can also embed YouTube videos inside the webpage.
 Example of a YouTube embed:
     <iframe width="200" height="200" src="https://www.youtube.com/embed/zkg_EILRgkI?si=q5efHYEWx1ujy_uj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-</div>
 
-<div >
-<h2>13.Navigation Tag</h2>
+<h2>12.Navigation Tag</h2>
 
 <pre>
 &lt;nav&gt;
@@ -321,9 +277,7 @@ Example of a YouTube embed:
 The nav element groups navigation links together.
 </p>
 
-</div>
-<div >
-<h2>14. Lists</h2>
+<h2>13. Lists</h2>
 
 <pre>
 &lt;ul&gt;
@@ -344,9 +298,7 @@ The ul element creates an unordered list, the ol element creates an ordered list
 and the li element defines a list item.
 </p>
 
-</div>
-<div >
-<h2>15. Main Tag</h2>
+<h2>14. Main Tag</h2>
 
 <pre>
 &lt;main&gt;
@@ -360,9 +312,7 @@ Website content goes here
 The main element contains the primary content of the webpage.
 </p>
 
-</div>
-<div >
-<h2>16. Footer Tag</h2>
+<h2>15. Footer Tag</h2>
 
 <pre>
 &lt;footer&gt;
@@ -374,11 +324,8 @@ The main element contains the primary content of the webpage.
 The footer element contains information shown at the bottom of the page.
 </p>
 
-</div>
 
-<div >
-
-<h2>17. Strong and Emphasis Tags</h2>
+<h2>16. Strong and Emphasis Tags</h2>
 
 <pre>
 &lt;strong&gt;Important Text&lt;/strong&gt;
@@ -397,11 +344,9 @@ Example:
 
 <em>Emphasized Text</em>
 
-</div>
 
-<div >
 
-<h2>18. Blockquote Tag</h2>
+<h2>17. Blockquote Tag</h2>
 
 <pre>
 &lt;blockquote&gt;
@@ -421,11 +366,9 @@ Education is the most powerful weapon
 which you can use to change the world.
 </blockquote>
 
-</div>
 
-<div >
 
-<h2>19. Address Tag</h2>
+<h2>18. Address Tag</h2>
 
 <pre>
 &lt;address&gt;
@@ -447,11 +390,9 @@ Addis Ababa, Ethiopia
 Email: student@example.com
 </address>
 
-</div>
 
-<div >
 
-<h2>20. HTML Entities</h2>
+<h2>19. HTML Entities</h2>
 
 <pre>
 &amp;copy;
@@ -473,11 +414,9 @@ HTML entities are used to display reserved characters and symbols.
 <li>&quot; = Quotation mark</li>
 </ul>
 
-</div>
 
-<div >
 
-<h2>21. Comments</h2>
+<h2>20. Comments</h2>
 
 <pre>
 &lt;!-- This is a comment --&gt;
@@ -487,6 +426,13 @@ HTML entities are used to display reserved characters and symbols.
 Comments are notes written for developers.
 They are not displayed on the webpage.
 </p>
+<hr>
+</main>
+<footer>
+    <nav>
+        <a href="index.html">Home</a>   |
+        <a href="index2.html">Tutorial vol2</a>
+    </nav>
+</footer>
 
-</div>
 
