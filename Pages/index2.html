@@ -6,15 +6,18 @@
     <title>HTML Tutorial vol2</title>
 </head>
 <body>
-    <a href="index.html">Home</a>   
+    <Main>
+    <nav>
+        <a href="index.html">Home</a>  |
+        <a href="tutorial.html">Tutorial vol1</a>
+    </nav>
+    
     <h1>Building My First HTML Website vol2</h1>
-    <div class="section">
+    <hr>
         <p>
-        This tutorial expands on the basic HTML concepts used in the previous tutorial and the
+        This tutorial furthur expands on the basic HTML concepts used in the previous tutorial and the
         purpose of each section of code.
         </p>
-    </div>
-    <div class="section">
 
 <h2>1. Tables</h2>
 
@@ -62,7 +65,7 @@ Tables are used to organize information in rows and columns.
 <li>td creates a data cell.</li>
 </ul>
 An Example of a table is shown above, which represents a weekly timetable with time slots and subjects for each day. The table includes a caption, header, body, and footer sections to organize the data effectively:
-<table border="1" bordercolor="Black">
+<table border="1">
         <caption><B>My Time table</B></caption>
         <thead>
             <tr>
@@ -128,8 +131,6 @@ An Example of a table is shown above, which represents a weekly timetable with t
             </tr>
         </tfoot>
     </table>
-</div>
-<div class="section">
 
 <h2>2. Rowspan and Colspan</h2>
 
@@ -148,9 +149,6 @@ Colspan makes a cell span multiple columns.
 <li><strong>rowspan="2"</strong> makes the Automata cell occupy two rows.</li>
 <li><strong>colspan="5"</strong> makes an empty cell stretch across five columns.</li>
 </ul>
-
-</div>
-<div class="section">
 
 <h2>3. Description Lists</h2>
 
@@ -179,10 +177,6 @@ Example:
     <dt>CSS</dt>
     <dd>Cascading Style Sheets</dd>
 </dl>
-
-</div>
-
-<div class="section">
 
 <h2>4. Nested Lists</h2>
 
@@ -213,10 +207,6 @@ Example:
     </li>
 </ul>
 
-</div>
-
-<div class="section">
-
 <h2>5. Div Tag</h2>
 
 <pre>
@@ -233,13 +223,9 @@ The div element is a container used to group content.
 
 Example:
 
-<div style="background-color: gray; padding: 10px;">
+<div>
 This content is grouped together.
 </div>
-
-</div>
-
-<div class="section">
 
 <h2>6. Section Tag</h2>
 
@@ -257,24 +243,12 @@ Introduction content
 
 <p>
 The section element groups related content together.
-<section
-style="
-background-color: lightyellow;
-padding:10px;
-border:1px solid black;">
-    
+<section>
 <h3>Introduction</h3>
-
 <p>
 Introduction content
 </p>
-
 </section>
-</p>
-
-</div>
-
-<div class="section">
 
 <h2>7. Article Tag</h2>
 
@@ -306,10 +280,6 @@ This project demonstrates HTML concepts including multimedia, forms, and tables.
 
 </article>
 
-</div>
-
-<div class="section">
-
 <h2>8. Aside Tag</h2>
 
 <pre>
@@ -332,7 +302,7 @@ Example:
 
 <aside>
 
-<h4>Quick Tips</h4>
+<h2>Quick Tips</h2>
 
 <ul>
 <li>Use semantic HTML</li>
@@ -341,10 +311,6 @@ Example:
 </ul>
 
 </aside>
-
-</div>
-
-<div class="section">
 
 <h2>9. Forms</h2>
 
@@ -390,10 +356,6 @@ Example:
 <button type="submit">Submit</button>
 <button type="reset">Reset</button>
 </form>
-
-</div>
-
-<div class="section">
 
 <h2>10. Additional Form Controls</h2>
 
@@ -468,10 +430,6 @@ Example:
 
 <input type="range" min="0" max="100">
 
-</div>
-
-<div class="section">
-
 <h2>11. Radio Buttons</h2>
 
 <pre>
@@ -491,10 +449,6 @@ Example:
 <input type="radio" name="gender"> Male
 
 <input type="radio" name="gender"> Female
-
-</div>
-
-<div class="section">
 
 <h2>12. Select and Option</h2>
 
@@ -523,10 +477,6 @@ Example:
 <option>Java</option>
 </select>
 
-</div>
-
-<div class="section">
-
 <h2>13. Buttons</h2>
 
 <pre>
@@ -549,9 +499,6 @@ Example:
 Reset
 </button>
 
-</div>
-
-<div class="section">
 
 <h2>14. Description Lists</h2>
 
@@ -581,9 +528,6 @@ Example:
 <dd>Adds styling.</dd>
 </dl>
 
-</div>
-
-<div class="section">
 
 <h2>15. Semantic Layout Elements</h2>
 
@@ -609,7 +553,14 @@ They improve readability and organization.
 <li>footer contains information shown at the bottom of a page.</li>
 </ul>
 
-</div>
-
+</Main>
+<hr>
 </body>
+<footer>
+<nav>
+        <a href="index.html">Home</a>  |
+        <a href="tutorial.html">Tutorial vol1</a>
+    
+    </nav>
+</footer>
 </html>
